@@ -3,15 +3,23 @@ Intro for new developers
 
 This is a quick introduction to get new developers up to speed on Graphene.
 
-Starting Graphene
+Starting Graphene V2
 -----------------
+This is an updated version of the Graphene (origal forked of Cryptonomex) software.
+(for running your own (BTS/ledger/crypto-bridge) exchange/wallet/withness nodes)
 
-For Ubuntu 14.04 LTS users, see this link first:
-    https://github.com/cryptonomex/graphene/wiki/build-ubuntu
+#Pre setup:
+    For Ubuntu +18.xx users: https://github.com/MathysL/graphene/wiki/Build-on-Ubuntu-18.xx
 
-and then proceed with:
+#update
+    sudo apt update
+    sudo apt upgrade -y
+    
+#set monitor
 
-    git clone https://github.com/cryptonomex/graphene.git
+#install 
+
+    git clone https://github.com/MathysL/graphene.git
     cd graphene
     git submodule update --init --recursive
     cmake -DCMAKE_BUILD_TYPE=Debug .
@@ -40,7 +48,7 @@ To import your initial balance:
 If you send private keys over this connection, `rpc-endpoint` should be bound to localhost for security.
 
 A list of CLI wallet commands is available
-[here](https://github.com/cryptonomex/graphene/blob/master/libraries/wallet/include/graphene/wallet/wallet.hpp).
+[here](https://github.com/MathysL/graphene/blob/master/libraries/wallet/include/graphene/wallet/wallet.hpp).
 
 Code coverage testing
 ---------------------
